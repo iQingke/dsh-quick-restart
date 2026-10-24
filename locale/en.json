@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Quick Restart",
+    "description": "Adds a Restart item to the account menu, with one confirmation step."
+  },
+  "menu": {
+    "restart": "Restart",
+    "restarting": "Restarting…",
+    "accountMenu": "Account menu"
+  },
+  "dialog": {
+    "title": "Restart DeepSeek Harness?",
+    "body": "The app will close and start again automatically. Anything still generating and any running terminal task will be interrupted.",
+    "note": "This usually takes 3–10 seconds; this page comes back automatically.",
+    "cancel": "Cancel",
+    "confirm": "Restart now",
+    "runningTitle": "Restarting…",
+    "runningBody": "The app is about to close. Do not close the window yourself; this page will come back automatically.",
+    "close": "Close",
+    "retry": "Try again",
+    "errorTitle": "Restart failed",
+    "unavailableTitle": "Cannot restart",
+    "logPath": "Log: ",
+    "openLogHint": "If this keeps failing, send the log file above to the developer."
+  },
+  "toast": {
+    "success": "DeepSeek Harness restarted in {seconds}s",
+    "failed": "Last restart did not finish: {reason}",
+    "noPermission": "Restart not permitted: {reason}",
+    "hostMissing": "Restart service is not loaded (host plugin inactive). Restart the app once, then try again."
+  },
+  "reason": {
+    "notDesktop": "Running in dsh web mode: the process is not hosted by the desktop app, so it cannot restart itself. Use the desktop app or restart it from a terminal.",
+    "noElectron": "No Electron main process detected; desktop restart is unavailable.",
+    "noAppExe": "Desktop executable not found: {path}",
+    "noHelper": "Plugin is incomplete: restart-helper.cjs is missing.",
+    "inProgress": "A restart is already in progress. Please wait.",
+    "unauthorized": "The connection failed the sign-in/origin check (HTTP {status}).",
+    "forbidden": "Request origin is not trusted (HTTP {status}). Open the page from the app and retry.",
+    "network": "Cannot reach the restart service; the host may not have loaded this plugin.",
+    "http": "Restart service returned HTTP {status}.",
+    "timeout": "The app did not exit in time; the restart may have been blocked.",
+    "unknown": "Unknown error."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@grapt/dsh-quick-restart",
+  "version": "1.0.4",
+  "description": "Adds a Restart item to the DeepSeek Harness desktop account menu, with confirmation, progress and failure reporting.",
+  "license": "MIT",
+  "author": "Grapt <graptk87@gmail.com>",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "restart",
+    "electron",
+    "desktop"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "restart-helper.cjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "screenshots/*.png"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

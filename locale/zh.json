@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "快捷重启",
+    "description": "在账号菜单中加入「重启」，一次确认即可重启 DeepSeek Harness。"
+  },
+  "menu": {
+    "restart": "重启",
+    "restarting": "正在重启…",
+    "accountMenu": "账号菜单"
+  },
+  "dialog": {
+    "title": "重启 DeepSeek Harness？",
+    "body": "应用会立即关闭并自动重新启动。正在生成的内容、运行中的终端任务会中断。",
+    "note": "通常需要 3–10 秒；重启后当前页面会自动恢复。",
+    "cancel": "取消",
+    "confirm": "立即重启",
+    "runningTitle": "正在重启…",
+    "runningBody": "应用即将关闭，请不要手动关闭窗口。重启后本页会自动恢复。",
+    "close": "关闭",
+    "retry": "重试",
+    "errorTitle": "重启失败",
+    "unavailableTitle": "无法重启",
+    "logPath": "日志：",
+    "openLogHint": "如多次失败，请把上面的日志文件发给开发者。"
+  },
+  "toast": {
+    "success": "DeepSeek Harness 已重启（用时 {seconds} 秒）",
+    "failed": "上次重启未完成：{reason}",
+    "noPermission": "没有权限执行重启：{reason}",
+    "hostMissing": "重启服务未加载（Host 插件未生效）。请重启应用后再试。"
+  },
+  "reason": {
+    "notDesktop": "当前运行在 dsh web 模式，进程不由桌面应用托管，无法自动重启。请改用桌面版，或在终端中重启。",
+    "noElectron": "未检测到 Electron 主进程，无法执行桌面重启。",
+    "noAppExe": "找不到桌面应用可执行文件：{path}",
+    "noHelper": "插件文件不完整：缺少 restart-helper.cjs。",
+    "inProgress": "已有一次重启正在进行，请稍候。",
+    "unauthorized": "连接未通过登录/来源校验（HTTP {status}）。",
+    "forbidden": "请求来源不被信任（HTTP {status}）。请从应用内打开页面后重试。",
+    "network": "无法连接重启服务，Host 可能尚未加载该插件。",
+    "http": "重启服务返回错误（HTTP {status}）。",
+    "timeout": "应用在预期时间内没有退出，重启可能被拦截。",
+    "unknown": "未知错误。"
+  }
+}
